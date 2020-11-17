@@ -1,10 +1,6 @@
 # POC-yarn-workspaces
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ff897193-1a92-4a01-a5b6-86b30a5b150b/deploy-status)](https://app.netlify.com/sites/clubpetro-internal-poc-frontend-refactory/deploys)
-
-https://clubpetro-internal-poc-frontend-refactory.netlify.app/
-
-POC para validar uma série de fatores relacionados a micro-frontends + monorepo 🎯
+POC para validar uma série de fatores relacionados a monorepo 🎯
 
 **_Changelog_**
 
