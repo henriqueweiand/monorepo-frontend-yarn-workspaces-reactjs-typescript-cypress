@@ -1,5 +1,5 @@
 {
-	"name": "clubpetro",
+	"name": "poc-yarn-workspaces",
 	"version": "1.0.0",
 	"main": "index.js",
 	"private": true,
