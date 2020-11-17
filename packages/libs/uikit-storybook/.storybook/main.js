@@ -1,10 +1,7 @@
 module.exports = {
-  "stories": [
-    "../stories/**/*.stories.mdx",
-    "../stories/**/*.stories.@(js|jsx|ts|tsx)"
-  ],
-  "addons": [
-    "@storybook/addon-links",
-    "@storybook/addon-essentials"
-  ]
+	stories: [
+		'../../uikit/src/components/**/*.stories.mdx',
+		'../../uikit/src/components/**/*.stories.@(js|jsx|ts|tsx)'
+	],
+	addons: ['@storybook/addon-links', '@storybook/addon-essentials']
 }
