@@ -1,0 +1,10 @@
+{
+	"name": "@project/libs-auth",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@types/node": "^12.0.0",
+		"typescript": "~3.7.2"
+	},
+	"scripts": {}
+}
