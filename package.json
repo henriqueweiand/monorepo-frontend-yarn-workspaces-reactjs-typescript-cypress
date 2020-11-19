@@ -5,13 +5,10 @@
 	"private": true,
 	"scripts": {
 		"dev": "yarn workspace @monorepo/proxy dev",
-		"build": "yarn npm-run-all program:build auth:build",
 		"proxy:start": "yarn workspace @monorepo/proxy start",
 		"proxy:build": "yarn workspace @monorepo/proxy build",
 		"proxy:export": "yarn workspace @monorepo/proxy export",
 		"proxy:deploy": "yarn proxy:build && yarn proxy:export",
-		"program:start": "yarn workspace @monorepo/program start",
-		"program:build": "yarn workspace @monorepo/program build",
 		"auth:start": "yarn workspace @monorepo/auth start",
 		"auth:build": "yarn workspace @monorepo/auth build",
 		"auth:e2e": "yarn workspace @monorepo/auth-e2e cypress",
