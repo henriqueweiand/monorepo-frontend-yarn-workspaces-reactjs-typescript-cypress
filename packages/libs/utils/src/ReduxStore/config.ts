@@ -2,11 +2,14 @@
 import { createStore, Store, combineReducers } from 'redux'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import { persistReducer, persistStore } from 'redux-persist'
-import root from './root/reduces'
+import { rootRedux } from '@monorepo/utils'
 import storage from 'redux-persist/lib/storage' // defaults to localStorage for web
 
-export default ({ reducers = {} }: { reducers?: any }) => {
-	const storeReducer = combineReducers({ root, ...reducers })
+export const storeConfig = ({ reducers = {} }: { reducers?: any }) => {
+	const storeReducer = combineReducers({
+		root: rootRedux.reducer,
+		...reducers
+	})
 
 	const persistConfig = {
 		key: 'root',
@@ -15,11 +18,11 @@ export default ({ reducers = {} }: { reducers?: any }) => {
 
 	const persistedReducer = persistReducer(persistConfig, storeReducer)
 
-	let store: Store<ReturnType<typeof storeReducer>> = createStore(
+	const store: Store<ReturnType<typeof storeReducer>> = createStore(
 		persistedReducer,
 		composeWithDevTools()
 	)
 
-	let persistor = persistStore(store)
-	return { store, persistor }
+	const persistor = persistStore(store)
+	return { store, persistor, storeReducer }
 }
