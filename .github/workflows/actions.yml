@@ -1,0 +1,30 @@
+name: GH-Actions
+on:
+  push:
+    branches:
+      - '*' # matches every branch that doesn't contain a '/'
+      - '*/*' # matches every branch containing a single '/'
+      - '**' # matches every branch
+      - '!master' # excludes master
+jobs:
+  cypress-run:
+    name: Cypress run
+    runs-on: ubuntu-16.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          path: packages/apps/auth-e2e
+
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+        with:
+          start: npm start
+          parallel: true
+          record: true
+          group: 'Actions'
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GHTOKEN }}
+
+          name: With server
