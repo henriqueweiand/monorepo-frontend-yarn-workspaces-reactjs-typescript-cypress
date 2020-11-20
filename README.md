@@ -22,8 +22,6 @@ POC para validar uma série de fatores relacionados monorepo com yarn workspaces
 
 ✅ UIKit Unit tests
 
-✅ Utils
-
 ✅ Proxy (NextJS, para ambiente de dev)
 
 ### Setup develop

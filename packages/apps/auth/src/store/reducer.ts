@@ -1,10 +1,6 @@
 import { combineReducers } from 'redux'
-import { rootRedux } from '@monorepo/utils'
-
-/**
- * Aqui ficam os reducers utilizados pela aplicacao
- */
+import rootRedux from './root/reduces'
 
 export default combineReducers({
-	root: rootRedux.reducer
+	root: rootRedux
 })

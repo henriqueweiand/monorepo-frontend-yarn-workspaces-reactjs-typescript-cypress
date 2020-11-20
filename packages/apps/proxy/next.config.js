@@ -38,7 +38,6 @@ const plugins = [
 		{
 			transpileModules: [
 				'@monorepo/uikit',
-				'@monorepo/utils',
 				'@monorepo/libs-auth',
 				'@monorepo/auth'
 			]

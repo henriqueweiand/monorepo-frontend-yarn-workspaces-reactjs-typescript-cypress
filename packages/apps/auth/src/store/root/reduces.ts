@@ -5,7 +5,7 @@ const INITIAL_STATE: RootState = {
 	leftMenuExpanded: true
 }
 
-export const reducer: Reducer<RootState> = (state = INITIAL_STATE, action) => {
+const reducer: Reducer<RootState> = (state = INITIAL_STATE, action) => {
 	switch (action.type) {
 		case RootTypes.TOGGLE_LEFT:
 			return {
@@ -16,3 +16,5 @@ export const reducer: Reducer<RootState> = (state = INITIAL_STATE, action) => {
 			return state
 	}
 }
+
+export default reducer
