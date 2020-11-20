@@ -16,11 +16,15 @@ jobs:
         uses: actions/checkout@v2
         with:
           path: packages/apps/auth-e2e
+      
+      - uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: install # will run `yarn install` command
 
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-          start: npm start
+          start: yarn auth:e2e
           parallel: true
           record: true
           group: 'Actions'
