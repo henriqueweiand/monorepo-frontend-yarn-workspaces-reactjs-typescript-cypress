@@ -13,18 +13,13 @@ jobs:
     runs-on: ubuntu-16.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          path: packages/apps/auth-e2e
-      
-      - uses: borales/actions-yarn@v2.0.0
-        with:
-          cmd: install # will run `yarn install` command
+        uses: actions/checkout@v1
 
       - name: Cypress run
-        uses: cypress-io/github-action@v2
+      - uses: cypress-io/github-action@v2
         with:
-          start: sudo yarn auth:e2e
+          working-directory: packages/apps/auth-e2e
+          start: yarn start
           parallel: true
           record: true
           group: 'Actions'
