@@ -24,7 +24,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-          start: yarn auth:e2e
+          start: sudo yarn auth:e2e
           parallel: true
           record: true
           group: 'Actions'
