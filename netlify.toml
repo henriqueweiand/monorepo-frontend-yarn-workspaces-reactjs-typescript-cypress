@@ -1,0 +1,6 @@
+## netlify.toml
+
+[[redirects]]
+  from = "/manager/*"
+  to = "/[...all].html"
+  status = 200
