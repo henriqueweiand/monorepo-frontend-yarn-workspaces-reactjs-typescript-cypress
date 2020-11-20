@@ -11,7 +11,7 @@
 		"proxy:deploy": "yarn proxy:build && yarn proxy:export",
 		"auth:start": "yarn workspace @monorepo/auth start",
 		"auth:build": "yarn workspace @monorepo/auth build",
-		"auth:e2e": "yarn workspace @monorepo/auth-e2e cypress",
+		"auth:e2e": "yarn workspace @monorepo/auth cypress",
 		"storybook:start": "yarn workspace @monorepo/uikit-storybook start",
 		"storybook:build": "yarn workspace @monorepo/uikit-storybook build"
 	},

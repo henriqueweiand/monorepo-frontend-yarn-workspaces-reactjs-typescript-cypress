@@ -14,7 +14,7 @@ POC para validar uma série de fatores relacionados monorepo com yarn workspaces
 
 ✅ Estrutura de pastas conforme → https://blog.strongbrew.io/opinionated-guidelines-for-large-nx-angular-projects/
 
-✅ Apps/auth-e2e em Cypress
+✅ auth-e2e em Cypress
 
 ✅ UIKit
 
