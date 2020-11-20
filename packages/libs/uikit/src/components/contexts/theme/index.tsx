@@ -13,7 +13,9 @@ const storageKey = (key: string) => `@ReactJSProjectTemplateTests:${key}`
 export const AppThemeProvider = ({ children }: PropsWithChildren<unknown>) => {
 	const [currentTheme, setCurrentTheme] = useState<ThemeState>(() => {
 		let storedTheme
-		if (process.browser) {
+		const isBrowser = typeof window !== 'undefined'
+
+		if (isBrowser) {
 			storedTheme = localStorage.getItem(storageKey('theme')) as ThemeState
 		}
 		return storedTheme ? JSON.parse(storedTheme) : 'dark'
