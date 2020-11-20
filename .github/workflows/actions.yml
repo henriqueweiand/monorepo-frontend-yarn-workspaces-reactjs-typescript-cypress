@@ -25,10 +25,8 @@ jobs:
         uses: ./
         with:
           working-directory: ${{ matrix.cypress.working_directory }}
+          build: yarn run build
           start: yarn start
-          parallel: true
-          record: true
-          group: 'Actions'
           wait-on: 'http://localhost:3000'
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
