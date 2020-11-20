@@ -15,14 +15,14 @@ jobs:
       fail-fast: false
       matrix:
         cypress:
-          - working_directory: packages/apps/proxy
+          - working_directory: packages/apps/auth
           - working_directory: packages/apps/auth-e2e
     steps:
       - name: Checkout
         uses: actions/checkout@v1
 
       - name: Cypress tests
-        uses: cypress-io/github-action@v2
+        uses: ./
         with:
           working-directory: ${{ matrix.cypress.working_directory }}
           start: yarn start
