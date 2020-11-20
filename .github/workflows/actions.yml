@@ -7,7 +7,6 @@ on:
       - '*/*' # matches every branch containing a single '/'
       - '**' # matches every branch
       - '**/**' # matches every branch
-      - '!master' # excludes master
 jobs:
   cypress-run:
     name: Cypress run
