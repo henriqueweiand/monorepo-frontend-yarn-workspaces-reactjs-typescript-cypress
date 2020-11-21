@@ -4,7 +4,6 @@
 	"main": "index.js",
 	"private": true,
 	"scripts": {
-		"test": "jest",
 		"dev": "yarn workspace @monorepo/proxy dev",
 		"proxy:start": "yarn workspace @monorepo/proxy start",
 		"proxy:build": "yarn workspace @monorepo/proxy build",
@@ -23,12 +22,7 @@
 		]
 	},
 	"devDependencies": {
-		"@monorepo/eslint-config": "*",
-		"@testing-library/jest-dom": "^5.11.6",
-		"@types/jest": "^26.0.15",
-		"jest": "^26.6.3",
-		"jest-dom": "^4.0.0",
-		"ts-jest": "^26.4.4"
+		"@monorepo/eslint-config": "*"
 	},
 	"license": "MIT"
 }
