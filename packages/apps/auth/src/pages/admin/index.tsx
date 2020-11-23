@@ -1,9 +1,9 @@
 import { Button } from '@monorepo/uikit'
-import { formExposed, formValues } from '../../components/forms/person/types'
+import { formExposed, formValues } from 'auth-components/forms/person/types'
 import React, { useRef, useCallback } from 'react'
 import { Card, Container, Title, Link } from './styles'
 import { AdminProps } from './types'
-import { Forms } from '../../components'
+import { Forms } from 'auth-components'
 
 const Admin: React.FC<AdminProps> = () => {
 	const formPersonRef = useRef<formExposed>(null)

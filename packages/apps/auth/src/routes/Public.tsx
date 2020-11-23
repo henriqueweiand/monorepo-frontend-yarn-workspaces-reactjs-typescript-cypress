@@ -3,8 +3,8 @@ import { createBrowserHistory } from 'history'
 import React, { Suspense } from 'react'
 import { Route, Router, Switch } from 'react-router-dom'
 
-const Admin = React.lazy(() => import('../pages/admin'))
-const Manager = React.lazy(() => import('../pages/manager'))
+const Admin = React.lazy(() => import('auth-pages/admin'))
+const Manager = React.lazy(() => import('auth-pages/manager'))
 
 const MainRoutes = () => {
 	return (

@@ -1,0 +1,27 @@
+{
+  "extends": "./tsconfig.prod.json",
+  "compilerOptions": {
+    "paths": {
+		"auth-components": ["packages/apps/auth/src/components"],
+		"auth-components/*": ["packages/apps/auth/src/components/*"],
+
+		"auth-pages": ["packages/apps/auth/src/pages"],
+		"auth-pages/*": ["packages/apps/auth/src/pages/*"],
+
+		"auth-routes": ["packages/apps/auth/src/routes"],
+		"auth-routes/*": ["packages/apps/auth/src/routes/*"],
+
+		"auth-store": ["packages/apps/auth/src/store"],
+		"auth-store/*": ["packages/apps/auth/src/store/*"],
+
+		"auth-styles": ["packages/apps/auth/src/styles"],
+		"auth-styles/*": ["packages/apps/auth/src/styles/*"],
+
+		"uikit-components": ["packages/libs/uikit/src/components"],
+		"uikit-components/*": ["packages/libs/uikit/src/components/*"],
+
+		"uikit-styles": ["packages/libs/uikit/src/components/styles"],
+		"uikit-styles/*": ["packages/libs/uikit/src/components/styles/*"]
+    }
+  }
+}

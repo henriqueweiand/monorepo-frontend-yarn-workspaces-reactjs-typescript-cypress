@@ -1,5 +1,6 @@
 import React, { PropsWithChildren } from 'react'
 import { Container, Input as InputBase, Error } from './styles'
+// import { Container, Input as InputBase, Error } from 'uikit-components/input/styles'
 import { InputProps } from './types'
 
 const Input: React.FC<PropsWithChildren<InputProps>> = ({
