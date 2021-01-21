@@ -22,7 +22,8 @@
 		]
 	},
 	"devDependencies": {
-		"@monorepo/eslint-config": "*"
+		"@monorepo/eslint-config": "*",
+		"lerna": "^3.22.1"
 	},
 	"license": "MIT"
 }
