@@ -1,6 +1,6 @@
 {
 	"name": "@monorepo/craco-config",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"main": "craco.config.js",
 	"license": "MIT",
 	"dependencies": {
